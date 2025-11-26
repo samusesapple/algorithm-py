@@ -21,3 +21,16 @@ for num in range(1, n+1):
         print('Buzz')
     else:
         print(num)
+
+# 마무리 퀴즈
+## Q1. 1부터 n까지 더하는 가장 코테스러운 한 줄 코드?
+sum(range(1, n+1))
+
+## Q2. 리스트 nums에서 index + value 동시에 받고 싶은 경우 사용하는 문법은?
+enumerate
+
+## Q3. 정수 n을 입력받아 n부터 0까지 출력하는 while문의 조건식은?
+n = int(input())
+while n >= 0:
+    print(n)
+    n-=1
