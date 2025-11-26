@@ -16,5 +16,36 @@
 - `strip()` : 문자열 양쪽 공백 제거  
 - `max(iterable)` : 비교 가능한 값들 중 최댓값 반환
 
+## Day 2 - Python 조건문, 반복문
+
+### 📌 학습 목표
+- if / elif / else 구조 이해
+- for / while 반복문 활용
+- range(), enumerate() 사용
+- break, continue 흐름 제어 이해
+
+### ✔️ 핵심 문법
+- `range(a, b)` : a부터 b-1까지의 범위를 반복
+- `enumerate(interable)` : index, value 동시에 필요할 때 사용
+  ```python
+  for idx, val in enumerate(nums):
+      print(idx, val)
+  ```
+- `sum(iterable)`: 배열에 있는 정수들의 합을 도출
+- `sum(range())`: 해당 범위에 속한 정수들의 합을 도출
+- `sorted(nums)`: 오름차순 정렬
+- `sorted(nums, True)`: 내림차순 정렬
+- list comprehension
+  ```python
+  각 요소를 2배로 만들기
+  nums = [1, 2, 3, 4, 5]
+  doubled_nums = [x * 2 for x in nums]
+  ```
+- `zip(list1, list2)`: 여러 리스트를 묶어서 순회 - 좌우 배열의 요소 비교 시 자주 사용
+  ```python
+  for a, b in zip(list1, list2):
+    print(a, b)
+    
+
 
 
